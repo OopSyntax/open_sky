@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background: url("/images/pattern-background-desktop.svg") no-repeat #e0e8ff;
+  background-size: cover;
+}
+
+.card-body {
+  border-radius: 20px;
+  box-shadow: 0 10px 20px #989ba7;
+  background-color: #ffffff;
+  width: 300px;
+  margin: auto;
+  transform: translateY(40px);
+}
+.card-body .attribution p {
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+.card-body .attribution p a {
+  color: #7280a7;
+}
+.card-body .attribution p:last-child {
+  padding-bottom: 25px;
+}
+.card-body h2, .card-body p, .card-body a {
+  text-align: center;
+}
+.card-body h2 {
+  padding-top: 10px;
+  font-weight: 900;
+  color: #1f2f56;
+}
+.card-body .card-content {
+  padding: 10px 0;
+  font-size: medium;
+  line-height: 1.5;
+  color: #7280a7;
+}
+.card-body .banner-img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.card-body .card-plan {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5f7ff;
+  padding: 7px 0;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.card-body .card-link a {
+  text-decoration: none;
+  display: block;
+  font-weight: 700;
+}
+.card-body .card-link a:first-child {
+  background-color: #3829e0;
+  color: #ffffff;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #e0e8ff;
+  margin-bottom: 25px;
+}
+.card-body .card-link a:first-child:hover {
+  background-color: #7280a7;
+}
+.card-body .card-link a:nth-child(2) {
+  color: #7280a7;
+  margin-bottom: 10px;
+}
+.card-body .card-link a:nth-child(2):hover {
+  color: #000000;
+}
+
+@media screen and (min-width: 375px) {
+  .card-body {
+    transform: translateY(25%);
+  }
+}
