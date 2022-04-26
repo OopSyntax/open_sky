@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/slick/slick.css">
+    <link rel="stylesheet" href="/slick/slick-theme.css">
+    <link rel="stylesheet" href="/css/lightbox.min.css">
+    <link rel="stylesheet" href="/css/fancybox.css"/>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <h1 class="site-logo">
+                <span id="openBtn">&#9776;</span> Sneakers
+            </h1>
+            <div class="navbar-img">
+                <input type="image" src="/images/icon-cart.svg" alt="" disabled>
+                <img src="/images/image-avatar.png" alt="">
+            </div>
+            <nav class="side-nav">
+                <ul class="nav-container">
+                    <li class="closeBtn-container"><a href="https://www.google.com" id="closeBtn">&times;</a></li>
+                    <li><a href="">Collections</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="site-content">
+            <div class="your-class">
+                <div>
+                    <img src="/images/image-product-1.jpg" alt="" srcset="" class="img-overlay">
+                </div>
+                <div>
+                    <img src="/images/image-product-2.jpg" alt="" srcset="" class="img-overlay">
+                </div>
+                <div>
+                    <img src="/images/image-product-3.jpg" alt="" srcset="" class="img-overlay">
+                </div>
+                <div>
+                    <img src="/images/image-product-4.jpg" alt="" srcset="" class="img-overlay">
+                </div>
+              </div>
+            <div class="lightbox-display">
+                <a href="/images/image-product-1.jpg" data-fancybox="gallery" data-thumb="/images/image-product-1-thumbnail.jpg" class="lightbox-img">
+                    <img src="/images/image-product-1.jpg" alt="" srcset="" style="width: 100%;height: 300px;" class="main-img">
+                </a>
+                <a href="/images/image-product-2.jpg" data-fancybox="gallery" data-thumb="/images/image-product-2-thumbnail.jpg">
+                </a>
+                <a href="/images/image-product-3.jpg" data-fancybox="gallery" data-thumb="/images/image-product-3-thumbnail.jpg">
+                </a>
+                <a href="/images/image-product-4.jpg" data-fancybox="gallery" data-thumb="/images/image-product-4-thumbnail.jpg">
+                </a>
+                <div class="thumbnails">
+                    <img src="/images/image-product-1-thumbnail.jpg" alt="" class="thumbnails-img">
+                    <img src="/images/image-product-2-thumbnail.jpg" alt="" class="thumbnails-img">
+                    <img src="/images/image-product-3-thumbnail.jpg" alt="" class="thumbnails-img">
+                    <img src="/images/image-product-4-thumbnail.jpg" alt="" class="thumbnails-img">
+                </div>
+            </div>
+            <div class="site-description">
+                <h1 class="site-name">Sneaker Company</h1>
+                <h2>Fall Limited Edition Sneakers</h2>
+                <p class="site-paragraph">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="pricing">
+                    <div class="discount-price">
+                        <p>$125.00</p>
+                        <p>50%</p>
+                    </div>
+                    <p class="n-price">$250.00</p>
+                </div>
+                <div class="cart-btn">
+                    <button type="button" id="subtractBtn">-</button>
+                    <p id="operand">0</p>
+                    <button type="button" id="addBtn">+</button>
+                </div>
+                <button type="button" class="add-btn">
+                    <img src="/images/icon-cart.svg" alt=""> Add to cart
+                </button>
+            </div>
+        </section>
+
+        <div style="display: flex; justify-content: center;">
+            <section class="cart-container">
+                 <h1>cart</h1>
+                 <p>Your cart is empty</p>
+             </section>
+            <section class="cart-holder">
+            <h1>cart</h1>
+            <div class="product-checkout">
+                <img src="/images/image-product-1-thumbnail.jpg" alt="">
+                <div>
+                    <p>Autum Limited Edition...</p>
+                    <p>$125.00 &times;
+                        <span class="qty"> 3 </span>
+                        <span class="result">result</span>
+                    </p>
+                </div>
+                <img src="/images/icon-delete.svg" alt="" style="width: 9%;cursor: pointer;" id="deleteBtn">
+            </div>
+            <button type="button" style="cursor: pointer;">Checkout</button>
+        </section>
+    </div>
+        
+    </main>
+    <script src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/migrate.js"></script>
+    <script src="/slick/slick.js"></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script src="/js/fancybox.umd.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
